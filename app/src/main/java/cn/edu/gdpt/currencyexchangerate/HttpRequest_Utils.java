@@ -22,8 +22,9 @@ public class HttpRequest_Utils {
     private static RequestBody requestBody;
     private static Response response;
 
-    public static String Sync_Get(String Bank) throws IOException {
-        Request request = new Request.Builder().url(URL_1 + "key=" + API_Key ).build();
+    public static String Sync_Get(String url) throws IOException {
+        String ss = "http://web.juhe.cn:8080/finance/exchange/rmbquot?key=e73535d39e96d223e20af0f89764af06";
+        Request request = new Request.Builder().url(url).build();
         Response execute = okHttpClient.newCall(request).execute();
         if (execute.isSuccessful()) {
             Json = execute.body().string();
@@ -33,7 +34,7 @@ public class HttpRequest_Utils {
 
 
     public static String Async_Get(String Bank) {
-        Request request = new Request.Builder().url(URL_1 + "key=" + API_Key + "&bank=" + Bank).build();
+        Request request = new Request.Builder().url(URL_2 + "key=" + API_Key + "&bank=" + Bank).build();
         okHttpClient.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Request request, IOException e) {
