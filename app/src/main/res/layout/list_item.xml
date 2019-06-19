@@ -2,1195 +2,1077 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
+    android:padding="10dp"
     android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
+            android:paddingTop="30dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name4"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy2"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price2"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication2"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
+            android:paddingTop="30dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name7"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy3"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price3"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication3"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
-        </LinearLayout>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
 
-    <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="60dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
+            android:paddingTop="30dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name3"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy4"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price4"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication4"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tv_name6"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="货币名称" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy5"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Buy_Rate6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price5"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞买入价:" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_Cash_Buy6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication5"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现汇卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Spot_Selling_Price6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现钞卖出价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Cash_Selling_Price6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行折算价:" />
+
+                        <TextView
+                            android:id="@+id/tv_Bank_Conversion6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发布日期:" />
+
+                        <TextView
+                            android:id="@+id/tv_Date_Of_Publication6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textAlignment="viewEnd" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="60dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_name9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="货币名称" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Buy_Rate9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text=""
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞买入价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Buy9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现汇卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Spot_Selling_Price9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="现钞卖出价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Cash_Selling_Price9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="银行折算价:" />
-
-                    <TextView
-                        android:id="@+id/tv_Bank_Conversion9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="发布日期:" />
-
-                    <TextView
-                        android:id="@+id/tv_Date_Of_Publication9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textAlignment="viewEnd" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

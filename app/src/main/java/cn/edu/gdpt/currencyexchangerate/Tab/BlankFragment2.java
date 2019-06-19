@@ -171,14 +171,6 @@ public class BlankFragment2 extends Fragment {
             TextView date_Of_Publication8 = view.findViewById(R.id.tv_Date_Of_Publication8);
             TextView spot_Selling_Price8 = view.findViewById(R.id.tv_Spot_Selling_Price8);
 
-            TextView name9 = view.findViewById(R.id.tv_name9);
-            TextView buy_Rate9 = view.findViewById(R.id.tv_Buy_Rate9);
-            TextView cash_Buy9 = view.findViewById(R.id.tv_Cash_Buy9);
-            TextView cash_Selling_Price9 = view.findViewById(R.id.tv_Cash_Selling_Price9);
-            TextView bank_Conversion9 = view.findViewById(R.id.tv_Bank_Conversion9);
-            TextView date_Of_Publication9 = view.findViewById(R.id.tv_Date_Of_Publication9);
-            TextView spot_Selling_Price9 = view.findViewById(R.id.tv_Spot_Selling_Price9);
-
             if (list.size() > 0) {
                 RateBean.ResultBean.Data1Bean data1 = list.get(position).getResult().get(position).getData1();
                 RateBean.ResultBean.Data2Bean data2 = list.get(position).getResult().get(position).getData2();
@@ -188,7 +180,6 @@ public class BlankFragment2 extends Fragment {
                 RateBean.ResultBean.Data6Bean data6 = list.get(position).getResult().get(position).getData6();
                 RateBean.ResultBean.Data7Bean data7 = list.get(position).getResult().get(position).getData7();
                 RateBean.ResultBean.Data8Bean data8 = list.get(position).getResult().get(position).getData8();
-                RateBean.ResultBean.Data9Bean data9 = list.get(position).getResult().get(position).getData9();
 
                 name.setText(data1.getName());
                 buy_Rate.setText(data1.getFBuyPri());
@@ -254,13 +245,6 @@ public class BlankFragment2 extends Fragment {
                 bank_Conversion8.setText(data8.getBankConversionPri());
                 date_Of_Publication8.setText(data8.getDate());
 
-                name9.setText(data9.getName());
-                buy_Rate9.setText(data9.getFBuyPri());
-                cash_Buy9.setText(data9.getMBuyPri());
-                spot_Selling_Price9.setText(data9.getFSellPri());
-                cash_Selling_Price9.setText(data9.getMSellPri());
-                bank_Conversion9.setText(data9.getBankConversionPri());
-                date_Of_Publication9.setText(data9.getDate());
             }else {
                 name.setText("2123");
             }
