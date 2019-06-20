@@ -171,6 +171,40 @@ public class BlankFragment2 extends Fragment {
             TextView date_Of_Publication8 = view.findViewById(R.id.tv_Date_Of_Publication8);
             TextView spot_Selling_Price8 = view.findViewById(R.id.tv_Spot_Selling_Price8);
 
+            TextView name9 = view.findViewById(R.id.tv_name9);
+            TextView buy_Rate9 = view.findViewById(R.id.tv_Buy_Rate9);
+            TextView cash_Buy9 = view.findViewById(R.id.tv_Cash_Buy9);
+            TextView cash_Selling_Price9 = view.findViewById(R.id.tv_Cash_Selling_Price9);
+            TextView bank_Conversion9 = view.findViewById(R.id.tv_Bank_Conversion9);
+            TextView date_Of_Publication9 = view.findViewById(R.id.tv_Date_Of_Publication9);
+            TextView spot_Selling_Price9 = view.findViewById(R.id.tv_Spot_Selling_Price9);
+
+            TextView name10 = view.findViewById(R.id.tv_name10);
+            TextView buy_Rate10 = view.findViewById(R.id.tv_Buy_Rate10);
+            TextView cash_Buy10 = view.findViewById(R.id.tv_Cash_Buy10);
+            TextView cash_Selling_Price10 = view.findViewById(R.id.tv_Cash_Selling_Price10);
+            TextView bank_Conversion10 = view.findViewById(R.id.tv_Bank_Conversion10);
+            TextView date_Of_Publication10 = view.findViewById(R.id.tv_Date_Of_Publication10);
+            TextView spot_Selling_Price10 = view.findViewById(R.id.tv_Spot_Selling_Price10);
+
+            TextView name11 = view.findViewById(R.id.tv_name11);
+            TextView buy_Rate11 = view.findViewById(R.id.tv_Buy_Rate11);
+            TextView cash_Buy11 = view.findViewById(R.id.tv_Cash_Buy11);
+            TextView cash_Selling_Price11 = view.findViewById(R.id.tv_Cash_Selling_Price11);
+            TextView bank_Conversion11 = view.findViewById(R.id.tv_Bank_Conversion11);
+            TextView date_Of_Publication11 = view.findViewById(R.id.tv_Date_Of_Publication11);
+            TextView spot_Selling_Price11 = view.findViewById(R.id.tv_Spot_Selling_Price11);
+
+            TextView name12 = view.findViewById(R.id.tv_name12);
+            TextView buy_Rate12 = view.findViewById(R.id.tv_Buy_Rate12);
+            TextView cash_Buy12 = view.findViewById(R.id.tv_Cash_Buy12);
+            TextView cash_Selling_Price12 = view.findViewById(R.id.tv_Cash_Selling_Price12);
+            TextView bank_Conversion12 = view.findViewById(R.id.tv_Bank_Conversion12);
+            TextView date_Of_Publication12 = view.findViewById(R.id.tv_Date_Of_Publication12);
+            TextView spot_Selling_Price12 = view.findViewById(R.id.tv_Spot_Selling_Price12);
+
+
+
             if (list.size() > 0) {
                 RateBean.ResultBean.Data1Bean data1 = list.get(position).getResult().get(position).getData1();
                 RateBean.ResultBean.Data2Bean data2 = list.get(position).getResult().get(position).getData2();
@@ -180,6 +214,11 @@ public class BlankFragment2 extends Fragment {
                 RateBean.ResultBean.Data6Bean data6 = list.get(position).getResult().get(position).getData6();
                 RateBean.ResultBean.Data7Bean data7 = list.get(position).getResult().get(position).getData7();
                 RateBean.ResultBean.Data8Bean data8 = list.get(position).getResult().get(position).getData8();
+                RateBean.ResultBean.Data9Bean data9 = list.get(position).getResult().get(position).getData9();
+                RateBean.ResultBean.Data10Bean data10 = list.get(position).getResult().get(position).getData10();
+                RateBean.ResultBean.Data11Bean data11 = list.get(position).getResult().get(position).getData11();
+                RateBean.ResultBean.Data12Bean data12 = list.get(position).getResult().get(position).getData12();
+                RateBean.ResultBean.Data13Bean data13 = list.get(position).getResult().get(position).getData13();
 
                 name.setText(data1.getName());
                 buy_Rate.setText(data1.getFBuyPri());
@@ -244,6 +283,38 @@ public class BlankFragment2 extends Fragment {
                 cash_Selling_Price8.setText(data8.getMSellPri());
                 bank_Conversion8.setText(data8.getBankConversionPri());
                 date_Of_Publication8.setText(data8.getDate());
+
+                name9.setText(data9.getName());
+                buy_Rate9.setText(data9.getFBuyPri());
+                cash_Buy9.setText(data9.getMBuyPri());
+                spot_Selling_Price9.setText(data9.getFSellPri());
+                cash_Selling_Price9.setText(data9.getMSellPri());
+                bank_Conversion9.setText(data9.getBankConversionPri());
+                date_Of_Publication9.setText(data9.getDate());
+
+                name10.setText(data10.getName());
+                buy_Rate10.setText(data10.getFBuyPri());
+                cash_Buy10.setText(data10.getMBuyPri());
+                spot_Selling_Price10.setText(data10.getFSellPri());
+                cash_Selling_Price10.setText(data10.getMSellPri());
+                bank_Conversion10.setText(data10.getBankConversionPri());
+                date_Of_Publication10.setText(data10.getDate());
+
+                name11.setText(data11.getName());
+                buy_Rate11.setText(data11.getFBuyPri());
+                cash_Buy11.setText(data11.getMBuyPri());
+                spot_Selling_Price11.setText(data11.getFSellPri());
+                cash_Selling_Price11.setText(data11.getMSellPri());
+                bank_Conversion11.setText(data11.getBankConversionPri());
+                date_Of_Publication11.setText(data11.getDate());
+
+                name12.setText(data12.getName());
+                buy_Rate12.setText(data12.getFBuyPri());
+                cash_Buy12.setText(data12.getMBuyPri());
+                spot_Selling_Price12.setText(data12.getFSellPri());
+                cash_Selling_Price12.setText(data12.getMSellPri());
+                bank_Conversion12.setText(data12.getBankConversionPri());
+                date_Of_Publication12.setText(data12.getDate());
 
             }else {
                 name.setText("2123");

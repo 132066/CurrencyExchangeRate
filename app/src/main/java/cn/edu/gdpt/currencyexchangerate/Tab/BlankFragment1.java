@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -62,6 +63,8 @@ public class BlankFragment1 extends Fragment {
         final EditText rate5 = view.findViewById(R.id.et_rate5);
         final TextView company5 = view.findViewById(R.id.company5);
 
+        final Button button = view.findViewById(R.id.btn_reserch);
+
         final EditText[] editTexts = {rate1, rate2, rate3, rate4, rate5};
         new Thread(new Runnable() {
             @Override
@@ -95,24 +98,23 @@ public class BlankFragment1 extends Fragment {
                         String json = (String) msg.obj;
                         FinanceExchange financeExchange = new Gson().fromJson(json, FinanceExchange.class);
                         list.add(financeExchange);
-                        FinanceExchange.ResultBean resultBean = financeExchange.getResult().get(0);
+                        final FinanceExchange.ResultBean resultBean = financeExchange.getResult().get(0);
+
+
+
                         String currency = resultBean.getData1().getCurrency();
                         String currency2 = resultBean.getData2().getCurrency();
                         String currency3 = resultBean.getData3().getCurrency();
                         String currency4 = resultBean.getData4().getCurrency();
                         String currency5 = resultBean.getData5().getCurrency();
 
-                        String price = resultBean.getData1().getClosePri();
-                        String price2 = resultBean.getData2().getClosePri();
-                        String price3 = resultBean.getData3().getClosePri();
-                        String price4 = resultBean.getData4().getClosePri();
-                        String price5 = resultBean.getData5().getClosePri();
 
-                        String code = resultBean.getData1().getCode();
+
+                        final String code = resultBean.getData1().getCode();
                         String code2 = resultBean.getData2().getCode();
-                        String code3 = resultBean.getData3().getCode();
-                        String code4 = resultBean.getData4().getCode();
-                        String code5 = resultBean.getData5().getCode();
+                        final String code3 = resultBean.getData3().getCode();
+                        final String code4 = resultBean.getData4().getCode();
+                        final String code5 = resultBean.getData5().getCode();
 
                         String[] split = currency2.split("指数");
                         String[] split2 = currency.split("美元");
@@ -127,10 +129,31 @@ public class BlankFragment1 extends Fragment {
                         /*for (int i = 0; i < editTexts.length; i++) {
                             editTexts[i].setText(totalSum[i]+"");
                         }*/
-                       /* rate2.setText(sum2 + "");
-                        rate3.setText((int) sum3 + "");
-                        rate4.setText((int) sum4 + "");
-                        rate5.setText((int) sum5 + "");*/
+
+                        button.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                String price = resultBean.getData1().getClosePri();
+                                String price2 = resultBean.getData2().getClosePri();
+                                String price3 = resultBean.getData3().getClosePri();
+                                String price4 = resultBean.getData4().getClosePri();
+                                String price5 = resultBean.getData5().getClosePri();
+
+                                float rate = Float.parseFloat(rate1.getText().toString().trim());
+                                float sum2 = Float.parseFloat(price)*rate;
+                                float sum3 = Float.parseFloat(price3)*rate;
+                                float sum4 = Float.parseFloat(price4)*rate;
+                                float sum5 = Float.parseFloat(price5)*rate;
+
+
+                                rate2.setText(String.valueOf(sum2));
+                                rate3.setText(String.valueOf(sum3));
+                                rate4.setText(String.valueOf(sum4));
+                                rate5.setText(String.valueOf(sum5));
+                            }
+                        });
+
+
 
                         name1.setText(split[0]);
                         name2.setText(split2[0]);
