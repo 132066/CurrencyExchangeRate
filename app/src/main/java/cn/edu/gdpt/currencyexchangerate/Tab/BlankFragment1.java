@@ -63,6 +63,16 @@ public class BlankFragment1 extends Fragment {
         final EditText rate5 = view.findViewById(R.id.et_rate5);
         final TextView company5 = view.findViewById(R.id.company5);
 
+        final TextView name6 = view.findViewById(R.id.tv_name6);
+        final TextView core6 = view.findViewById(R.id.tv_coree6);
+        final EditText rate6 = view.findViewById(R.id.et_rate6);
+        final TextView company6 = view.findViewById(R.id.company6);
+
+        final TextView name7 = view.findViewById(R.id.tv_name7);
+        final TextView core7 = view.findViewById(R.id.tv_coree7);
+        final EditText rate7 = view.findViewById(R.id.et_rate7);
+        final TextView company7 = view.findViewById(R.id.company7);
+
         final Button button = view.findViewById(R.id.btn_reserch);
 
         final EditText[] editTexts = {rate1, rate2, rate3, rate4, rate5};
@@ -107,6 +117,9 @@ public class BlankFragment1 extends Fragment {
                         String currency3 = resultBean.getData3().getCurrency();
                         String currency4 = resultBean.getData4().getCurrency();
                         String currency5 = resultBean.getData5().getCurrency();
+                        String currency6 = resultBean.getData6().getCurrency();
+                        String currency7 = resultBean.getData7().getCurrency();
+                        Log.d("tag",currency6);
 
 
 
@@ -115,12 +128,16 @@ public class BlankFragment1 extends Fragment {
                         final String code3 = resultBean.getData3().getCode();
                         final String code4 = resultBean.getData4().getCode();
                         final String code5 = resultBean.getData5().getCode();
+                        final String code6 = resultBean.getData6().getCode();
+                        final String code7 = resultBean.getData7().getCode();
 
                         String[] split = currency2.split("指数");
                         String[] split2 = currency.split("美元");
                         String[] split3 = currency3.split("美元");
                         String[] split4 = currency4.split("美元");
                         String[] split5 = currency5.split("美元");
+                        String[] split6 = currency6.split("美元");
+                        String[] split7 = currency7.split("美元");
 
 
                         //int[] totalSum = new int[]{sum, sum2, sum3, sum4, sum5};
@@ -138,18 +155,24 @@ public class BlankFragment1 extends Fragment {
                                 String price3 = resultBean.getData3().getClosePri();
                                 String price4 = resultBean.getData4().getClosePri();
                                 String price5 = resultBean.getData5().getClosePri();
+                                String price6 = resultBean.getData6().getClosePri();
+                                String price7 = resultBean.getData7().getClosePri();
 
                                 float rate = Float.parseFloat(rate1.getText().toString().trim());
                                 float sum2 = Float.parseFloat(price)*rate;
                                 float sum3 = Float.parseFloat(price3)*rate;
                                 float sum4 = Float.parseFloat(price4)*rate;
                                 float sum5 = Float.parseFloat(price5)*rate;
+                                float sum6 = Float.parseFloat(price6)*rate;
+                                float sum7 = Float.parseFloat(price7)*rate;
 
 
                                 rate2.setText(String.valueOf(sum2));
                                 rate3.setText(String.valueOf(sum3));
                                 rate4.setText(String.valueOf(sum4));
                                 rate5.setText(String.valueOf(sum5));
+                                rate6.setText(String.valueOf(sum6));
+                                rate7.setText(String.valueOf(sum7));
                             }
                         });
 
@@ -160,18 +183,24 @@ public class BlankFragment1 extends Fragment {
                         name3.setText(split3[0]);
                         name4.setText(split4[0]);
                         name5.setText(split5[0]);
+                        name6.setText(split6[1]);
+                        name7.setText(split7[1]);
 
                         company1.setText(split[0]);
                         company2.setText(split2[0]);
                         company3.setText(split3[0]);
                         company4.setText(split4[0]);
                         company5.setText(split5[0]);
+                        company6.setText(split6[1]);
+                        company7.setText(split7[1]);
 
                         core1.setText(code2);
                         core2.setText(code);
                         core3.setText(code3);
                         core4.setText(code4);
                         core5.setText(code5);
+                        core6.setText(code6);
+                        core7.setText(code7);
 
                 }
             }
