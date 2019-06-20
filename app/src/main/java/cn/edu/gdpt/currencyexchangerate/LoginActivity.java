@@ -55,8 +55,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     return;
                 } else if (dbUtils.userLogin(userName, psw)) {
                     Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
-                    Intent data = new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(data);
+                    Intent data = new Intent();
                     data.putExtra("isLogin", true);
                     data.putExtra("LoginUserName", userName);
                     setResult(RESULT_OK, data);
