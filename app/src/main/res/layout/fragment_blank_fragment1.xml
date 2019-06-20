@@ -55,18 +55,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginRight="20dp"
                         android:orientation="vertical">
 
                         <EditText
-
                             android:id="@+id/et_rate1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="40dp"
-                            android:inputType="number"
+                            android:layout_marginLeft="30dp"
                             android:maxLength="5"
                             android:text="1"
+                            android:textAlignment="center"
                             android:textSize="20dp" />
 
                         <TextView
@@ -76,6 +75,12 @@
                             android:layout_gravity="center_horizontal"
                             android:text="单位"
                             android:textSize="20dp" />
+                        <Button
+                            android:id="@+id/btn_reserch"
+                            android:text="兑换"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
                     </LinearLayout>
                 </RelativeLayout>
 
