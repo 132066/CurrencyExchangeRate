@@ -3,6 +3,7 @@ package cn.edu.gdpt.currencyexchangerate;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,6 +53,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.btn_register_register:
                 userName = edt_register_name.getText().toString().trim();
                 psw = edt_register_password1.getText().toString().trim();
+                String md5 = MD.md5(psw);
+                Log.d("TA",md5);
                 if (TextUtils.isEmpty(userName)) {
                     Toast.makeText(this, "请输入用户名", Toast.LENGTH_SHORT).show();
                     return;
