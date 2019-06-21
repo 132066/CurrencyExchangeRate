@@ -52,7 +52,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.btn_register_register:
                 userName = edt_register_name.getText().toString().trim();
-                psw = MD.md5(edt_register_password1.getText().toString().trim());
+                psw = edt_register_password1.getText().toString().trim();
+                MD.md5(psw);
                 if (TextUtils.isEmpty(userName)) {
                     Toast.makeText(this, "请输入用户名", Toast.LENGTH_SHORT).show();
                     return;

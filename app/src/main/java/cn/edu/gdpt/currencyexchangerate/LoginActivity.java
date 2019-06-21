@@ -49,6 +49,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.btn_login_login:
                 userName = edt_login_name.getText().toString().trim();
                 psw = edt_login_password.getText().toString().trim();
+                MD.md5(psw);
                 if (TextUtils.isEmpty(userName)) {
                     Toast.makeText(LoginActivity.this, "请输入用户名", Toast.LENGTH_SHORT).show();
                     return;
