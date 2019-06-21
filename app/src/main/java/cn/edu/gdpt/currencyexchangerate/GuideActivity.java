@@ -14,11 +14,11 @@ public class GuideActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(GuideActivity.this,LoginActivity.class);
+                Intent intent=new Intent(GuideActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
 
             }
-        }, 2000);
+        }, 1000);
     }
 }
